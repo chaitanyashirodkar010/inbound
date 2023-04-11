@@ -1,0 +1,323 @@
+/*==================== Media Queries ====================*/
+
+/*==================== Media Query for max-width 1440px (Laptop View) ====================*/
+
+@media (max-width:1450px) {
+    /*==================== 2. Homepage Section ====================*/
+
+    /*----- Testimonials Section -----*/
+    #quote-carousel .carousel-indicators {
+        top: -110px;
+        left: 550px;
+    }
+	.bgtalk {
+  
+    background-size: 100% 100%;
+   
+}
+}
+
+/*==================== Media Query for max-width 1024px (ipad pro View) ====================*/
+
+@media (max-width:1050px) {
+    /*==================== 1. General CSS ====================*/
+    .ic-inr-bnr-sec .ic-yellow-seperator {
+        background-position: 0 6px;
+    }
+
+    /*----- Header Section -----*/
+    header {
+        padding: 10px 30px;
+    }
+
+    /*==================== 2. Homepage Section ====================*/
+
+    /*----- Banner Section -----*/
+    .ic-bnr-sec .ic-bnr-box h2 {
+        font-size:28px;
+    }
+    .ic-bnr-sec .ic-bnr-box h2 span {
+        font-size: 50px;
+    }
+
+    /*----- Case Studies Section -----*/
+    .ic-case-sec article h3 {
+        font-size: 24px;
+    }
+
+    /*----- Testimonials Section -----*/
+    #quote-carousel .carousel-indicators {
+        top: -120px;
+        left: 480px;
+    }
+    #quote-carousel .carousel-indicators li {
+        width:50px;
+        height:50px;
+    }
+    #quote-carousel .carousel-indicators .active {
+        width:50px;
+        height:50px;
+    }
+
+    /*-----  What make us Section -----*/
+    .ic-make-sec .nav-pills .nav-link.active, .nav-pills >.nav-link {
+        padding: 15px 30px 15px 10px
+    }
+
+}
+
+/*==================== Media Query for max-width 768px (ipad View) ====================*/
+
+@media (max-width:800px) {
+    /*==================== 1. General CSS ====================*/
+
+    /*----- Header Section -----*/
+    header {
+        padding: 10px 20px;
+    }
+    header nav ul li {
+        padding: 0 15px;
+    }
+
+    /*----- Footer Section -----*/
+    footer .ic-col-pad {
+        padding-right: 20px;
+    }
+    footer .ic-seperator {
+        width:180px;
+    }
+    a.icon_call_for_mobile {
+        display: block !important;
+        margin-top: 5px;
+        margin-right: -20px;
+    }
+    .desktop-show {
+        display: none;
+    }
+    .mobile-show {
+        display: inline-block !important;
+    }
+
+    /*==================== 2. Homepage  ====================*/
+
+    /*----- Banner Section -----*/
+    .ic-sec-pad {
+        padding: 100px 0;
+    }
+    .ic-bnr-sec .ic-bnr-box-col {
+        margin-top:50px;
+    }
+
+    /*----- Testimonials Section -----*/
+    #quote-carousel .carousel-indicators {
+        top: 40px;
+        left: 0px;
+    }
+    #quote-carousel .carousel-indicators {
+        transform: rotate(0deg);
+        padding: 0;
+    }
+    #quote-carousel .carousel-indicators li img {
+        transform: rotate(0deg);
+    }
+    #quote-carousel .carousel-indicators li {
+        width:50px;
+        height:50px;
+    }
+    #quote-carousel .carousel-indicators .active {
+        width:50px;
+        height:50px;
+    }
+
+    /*----- What make us Section -----*/
+    .ic-make-sec {
+        padding-bottom: 20px;
+    }
+    .ic-make-sec .nav-pills .nav-link.active, .nav-pills >.nav-link {
+        margin-right: 0;
+    }
+    .ic-make-sec .progress.vertical {
+        right: -200px;
+    }    
+    .ic-make-sec .ic-first-tab-line, .ic-make-sec .ic-second-tab-line {
+        right: 68px;
+    }
+    .ic-make-sec .ic-third-tab-line, .ic-make-sec .ic-fourth-tab-line, .ic-make-sec .ic-fifth-tab-line {
+        right: 55px;
+    }
+
+
+    /*==================== 3. Case Study Page  ====================*/
+
+    /*----- Result Section -----*/
+    .ic-result-sec h1 {
+        font-size: 50px;
+    }
+    .ic-result-sec h5 {
+        padding: 0 5%;
+    }
+    .ic-result-sec .ic-box h1 {
+        font-size:50px;
+    }
+    .ic-result-sec .ic-box h4 {
+        font-size:22px;
+    }
+
+    /*==================== 4. Thanks Page  ====================*/
+
+    /*----- Banner Section -----*/
+    .ic-thanks-bnr-sec h1 {
+        font-size: 65px;
+    }
+
+    /*----- Read Section -----*/
+    .ic-img-box h4 {
+        font-size:20px;
+    } 
+    .ic-img-box h4.ic-open {
+        padding: 20px 20px 20px;
+    }
+
+
+    /*==================== 8. Blog Detail Page  ====================*/
+
+    /*----- Content Section -----*/
+    .ic-content-sec.ic-sec-pad {        
+        padding: 50px 0;        
+    }
+    .ic-content-sec .ic-spacer-140 {
+        height: 80px;
+    }
+    .ic-content-sec .ic-spacer-80 {
+        height: 60px;
+    }
+  .mangeseo {
+    padding: 50px 0 50px !important;
+}
+.mangeseo h1 {
+    font-size: 28px;
+}
+.seoul li {
+       padding: 10px 0;
+    border-bottom: 1px solid#ccc !important;
+    align-items: center;
+    width: 100%;
+    border-right:0px solid#ccc;
+   
+} 
+.reviwbox ul li {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    border-right: 0px solid#ccc;
+}
+
+.cluchlogo h6 {
+    position: absolute;
+    bottom: -12px;
+    left: 47%;
+    font-size: 13px;
+}
+.whybox {
+    border: 2px solid#000;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.bgtalk {
+    background-size: cover;
+    background-position: bottom;
+} 
+.owl-stage {
+ left: -22px;
+ }
+ .elvpop {
+    width: 100%;
+   
+}
+.tittleceo {
+   
+    margin-top: 20px;
+}
+}
+
+/*==================== Media Query for max-width 500px (Mobile View) ====================*/
+
+@media (max-width:500px) {
+    /*==================== 1. General CSS ====================*/
+	.navbar-brand img {
+    width: 200px;
+}
+    .ic-inr-bnr-sec h1 {
+        font-size: 30px;
+    }
+
+    /*----- Header Section -----*/
+    header {
+        padding: 10px 0px;
+    }
+    header ul.navbar-nav {
+        margin-top: 20px;
+    }
+
+    /*----- Footer Section -----*/
+    footer .ic-center-pad {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    /*==================== 2. Homepage Section ====================*/
+
+    /*----- Banner Section -----*/
+    .ic-bnr-sec .ic-spacer-40 {
+        height: 20px;
+    }
+
+    /*----- Testimonials Section -----*/
+    #quote-carousel .carousel-inner .carousel-item .ic-main-img {
+        top:0;
+    }
+    #quote-carousel .carousel-indicators {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /*----- What make us Section -----*/
+    .ic-make-sec {
+        padding-bottom: 0px;
+    }
+    .ic-make-sec .nav-pills .nav-link.active, .nav-pills >.nav-link {
+        text-align: center;
+    }
+    .ic-make-sec .progress.vertical, .ic-make-sec .ic-first-tab-line, .ic-make-sec .ic-second-tab-line, .ic-make-sec .ic-third-tab-line, .ic-make-sec .ic-fourth-tab-line, .ic-make-sec .ic-fifth-tab-line {
+        display: none;
+    }
+
+    /*==================== 3. Case Study Page  ====================*/
+
+    /*----- Result Section -----*/
+    .ic-result-sec h1 {
+        font-size: 32px;
+    }
+
+    /*==================== 4. Thanks Page  ====================*/
+
+    /*----- Banner Section -----*/
+    .ic-thanks-bnr-sec h1 {
+        font-size: 50px;
+    }
+
+    /*----- Read Section -----*/
+    .ic-thanks-read-sec {
+        padding-bottom: 20px;
+    }
+
+    /*==================== 8. Blog Detail Page  ====================*/
+
+    /*----- Content Section -----*/
+    .ic-content-sec .ic-spacer-40 {
+        height: 20px;
+    }
+
+}
