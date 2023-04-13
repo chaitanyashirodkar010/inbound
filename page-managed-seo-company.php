@@ -6,20 +6,27 @@
             <div class="col-lg-8">
                 <h1 class="ic-font-weight-600 ic-color-black mb-3">We help companies get more customers from
                     Google through short term SEO "Sprints".
-
                 </h1>
                 <h5>Rank High Faster. Increase Traffic. Achieve Better ROIs</h5>
                 <div class="ic-spacer-40"></div>
 
                 <ul class="seoul">
-                    <li><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/1.png" />Faster Results</li>
-                    <li class=" border-right-0 pl-lg-4 pl-0"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/2.png" />No Monthly
-                        Retainers</li>
-                    <li><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/3.png" />No Long Term Contracts</li>
-                    <li class=" border-right-0 pl-lg-4 pl-0"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/4.png" />Transparent Pricing
+                    <li><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/1.png" />Faster Results
                     </li>
-                    <li class="border-bottom-0"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/5.png" />Risk Free Campaigns</li>
-                    <li class="border-bottom-0 border-right-0 pl-lg-4 pl-0"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/6.png" />White Hat
+                    <li class=" border-right-0 pl-lg-4 pl-0"><img
+                            src="<?php echo get_bloginfo('template_directory')?>/images/icons/2.png" />No Monthly
+                        Retainers</li>
+                    <li><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/3.png" />No Long Term
+                        Contracts</li>
+                    <li class=" border-right-0 pl-lg-4 pl-0"><img
+                            src="<?php echo get_bloginfo('template_directory')?>/images/icons/4.png" />Transparent
+                        Pricing
+                    </li>
+                    <li class="border-bottom-0"><img
+                            src="<?php echo get_bloginfo('template_directory')?>/images/icons/5.png" />Risk Free
+                        Campaigns</li>
+                    <li class="border-bottom-0 border-right-0 pl-lg-4 pl-0"><img
+                            src="<?php echo get_bloginfo('template_directory')?>/images/icons/6.png" />White Hat
                         Link Building</li>
                 </ul>
 
@@ -176,41 +183,31 @@
             </div>
         </div>
         <div id="owl-demo-2" class="owl-carousel owl-theme">
+            <?php $args = array(
+'post_type'=> 'post',
+'orderby'    => 'ID',
+'post_status' => 'publish',
+'order'    => 'DESC',
+'posts_per_page' => -1 // this will retrive all the post that is published 
+);
+$result = new WP_Query( $args );
+if ( $result-> have_posts() ) : ?>
+            <?php while ( $result->have_posts() ) : $result->the_post(); ?>
             <div class="item">
                 <article class="mb-5 mb-md-auto">
-                    <div class="md-img-zoom"><img src="<?php echo get_bloginfo('template_directory')?>/images/case-1.jpg" class="img-fluid" alt="Case Image">
-                    </div>
-                    <p class="ic-montserrat my-4 ic-color-black"><span>CASE STUDY</span> YOURMECHANIC</p>
-                    <h3 class="line-height-inherit"><a href="case_study_Yourmechanic.html"
-                            class="ic-color-black d-flex"><span class="mr-1 fs-24">1530 %</span> <span class="fs-20">Y/Y
-                                increase in Non-Brand SEO Traffic</span></a></h3>
+                    <div class="md-img-zoom"><img src="<?php the_field('featured_image'); ?>" class="img-fluid"
+                            alt="Case Image"></div>
+                    <p class="ic-montserrat my-4 ic-color-black"> <?php echo get_the_title(  ); ?></p>
+                    <h3 class="line-height-inherit">
+                        <a href="<?php echo get_permalink() ?>" class="ic-color-black d-flex">
+                            <span class="mr-1 fs-24"><?php echo get_field('percentage'); ?></span>
+                            <span class="fs-20"><?php echo wp_strip_all_tags( get_the_content() );?></span>
+                        </a>
+                    </h3>
                     <div class="ic-case-seperator mt-4"></div>
                 </article>
             </div>
-            <div class="item">
-                <article class="mb-5 mb-md-auto">
-                    <div class="md-img-zoom"><img src="<?php echo get_bloginfo('template_directory')?>/images/case-2.jpg" class="img-fluid" alt="Case Image">
-                    </div>
-                    <p class="ic-montserrat my-4 ic-color-black"><span>CASE STUDY</span> DEFENSETAX</p>
-                    <!-- <h3><a href="case_study_defensetax.html" class="ic-color-black">A Tax Attorney specializing in IRS Tax Settletment </a></h3> -->
-                    <h3 class="line-height-inherit"><a href="case_study_defensetax.html"
-                            class="ic-color-black d-flex"><span class="mr-1 fs-24">1530 %</span> <span class="fs-20">Y/Y
-                                increase in Non-Brand SEO Traffic</span></a></h3>
-                    <div class="ic-case-seperator mt-4"></div>
-                </article>
-            </div>
-            <div class="item">
-                <article>
-                    <div class="md-img-zoom"><img src="<?php echo get_bloginfo('template_directory')?>/images/case-3.jpg" class="img-fluid" alt="Case Image">
-                    </div>
-                    <p class="ic-montserrat my-4 ic-color-black"><span>CASE STUDY</span> WELLNESS</p>
-                    <!--  <h3><a href="case_study_wellness.com.html" class="ic-color-black">See how we were able to boost traffic on wellness.com to 4.1 M </a></h3> -->
-                    <h3 class="line-height-inherit"><a href="case_study_wellness.com.html"
-                            class="ic-color-black d-flex"><span class="mr-1 fs-24">1530 %</span> <span class="fs-20">Y/Y
-                                increase in Non-Brand SEO Traffic</span></a></h3>
-                    <div class="ic-case-seperator mt-4"></div>
-                </article>
-            </div>
+            <?php	endwhile; endif; ?>
 
         </div>
     </div>
