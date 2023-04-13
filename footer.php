@@ -37,9 +37,7 @@
         </div>
     </div>
 </footer>
-<!-- echo get_bloginfo('template_directory'); -->
 
-<!-- Body Wrapper Ends -->
 <!-- General Js -->
 <script src="<?php echo get_bloginfo('template_directory')?>/js/jquery-3.2.1.min.js"></script>
 <!-- Bootstrap Js -->
@@ -108,6 +106,27 @@ menuitems.forEach(menuitem => {
         }
     })
 });
+</script>
+<script>
+let links = document.querySelectorAll(".menu-item")
+document.querySelector(".sub-menu").style.display = "none"
+
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        var yourUl = link.querySelector(".sub-menu");
+        yourUl.style.display = yourUl.style.display === 'none' ? '' : 'none';
+    })
+});
+const specifiedElement = document.querySelector(".menu-item")
+
+document.addEventListener('click', event => {
+    console.log(specifiedElement.contains(event.target));
+
+    const isClickInside = specifiedElement.contains(event.target)
+    if (!isClickInside) {
+        document.querySelector(".sub-menu").style.display = "none"
+    }
+})
 </script>
 </body>
 
