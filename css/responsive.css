@@ -87,7 +87,7 @@
         width:180px;
     }
     a.icon_call_for_mobile {
-        display: block !important;
+        display: none !important;
         margin-top: 5px;
         margin-right: -20px;
     }
