@@ -3,9 +3,11 @@
         <div class="row justify-content-between">
             <div class="col-md-4 align-logo">
                 <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img
-                        src="<?php echo get_bloginfo('template_directory')?>/images/Logo.png" class="img-fluid" alt="Logo"></a>
+                        src="<?php echo get_bloginfo('template_directory')?>/images/Logo.png" class="img-fluid"
+                        alt="Logo"></a>
                 <div class="ic-seperator"></div>
-                <div class="address-icon"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/new-york-icon.png"></div>
+                <div class="address-icon"><img
+                        src="<?php echo get_bloginfo('template_directory')?>/images/icons/new-york-icon.png"></div>
                 <h5 class="address-heading">New York</h5>
                 <h6 class="address">1280 Lexington Ave STE 2
                     New York, NY 10028</h6>
@@ -26,9 +28,12 @@
                 <a href="https://www.linkedin.com/company/chlorophyll-marketing" target="_blank"><img
                         src="<?php echo get_bloginfo('template_directory')?>/images/LinkedIn_Logo.png"></a>
             </div>
-            <div class="ic-seperator"></div>
-            <a href="https://www.designrush.com/agency/profile/idea-catalyst" target="_blank" class="d-inline-block ms-2">See Idea Catalyst
-                profile on DesignRush</a>
+            <div class="col-md-8">
+                <div class="ic-seperator"></div>
+                <a href="https://www.designrush.com/agency/profile/idea-catalyst" target="_blank"
+                    class="d-inline-block ms-2">See Idea Catalyst
+                    profile on DesignRush</a>
+            </div>
         </div>
     </div>
 </footer>
