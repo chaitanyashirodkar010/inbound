@@ -131,10 +131,13 @@ ul.sub-menu {
     white-space: normal;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
+@media (min-width:900px) {
+    .menu {
+        display: flex;
+        align-items: center;
+    }
 }
+
 
 li {
     list-style-type: none;
@@ -1263,9 +1266,11 @@ button:focus {
 .line-height-inherit {
     line-height: 1.6;
 }
-
+.phone-icon{
+    position: relative;
+}
 .phone-icon::before {
-    
+
     content: url(../images/telephone-forward-fill.svg);
     width: 20px;
     height: 20px;
