@@ -52,8 +52,7 @@
             <button type="submit" class="btn ic-primary-btn float-md-right">Get in touch</button>
           </div>
         </form>
-        []
-        <?php echo do_shortcode('[wpforms id="59" title="false"]');?>
+        <?php echo do_shortcode('[wpforms id="63" title="false"]');?>
       </div>
     </div>
   </div>
