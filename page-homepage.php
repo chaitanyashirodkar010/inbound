@@ -79,13 +79,6 @@
 $result = new WP_Query( $args );
 if ( $result-> have_posts() ) : ?>
             <?php while ( $result->have_posts() ) : $result->the_post(); ?>
-
-
-
-
-
-
-
             <div class="item">
                 <article class="mb-5 mb-md-auto">
                     <div class="md-img-zoom"><img src="<?php the_field('featured_image'); ?>" class="img-fluid"
@@ -93,7 +86,7 @@ if ( $result-> have_posts() ) : ?>
                     <p class="ic-montserrat my-4 ic-color-black"> <?php echo get_the_title(  ); ?></p>
                     <h3 class="line-height-inherit">
                         <a href="<?php echo get_permalink() ?>" class="ic-color-black d-flex">
-                            <span class="mr-1 fs-24">1530 %</span>
+                            <span class="mr-1 fs-24"><?php echo get_field('percentage'); ?></span>
                             <span class="fs-20"><?php echo wp_strip_all_tags( get_the_content() );?></span>
                         </a>
                     </h3>
