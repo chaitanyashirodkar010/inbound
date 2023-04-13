@@ -115,41 +115,41 @@ if ( $result-> have_posts() ) : ?>
                 <div class="ic-spacer-80"></div>
             </div>
             <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-1.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-2.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-3.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-4.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-5.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-6.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-7.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-8.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-9.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-10.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-11.png" class="img-fluid"
-                            alt="Client Image"> </div>
-                    <div class="col-6 col-md-3 col-lg-2"> <img
-                            src="<?php echo get_bloginfo('template_directory')?>/images/client-12.png" class="img-fluid"
-                            alt="Client Image"> </div>
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-1.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-2.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-3.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-4.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-5.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-6.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-7.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-8.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-9.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-10.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-11.png" class="img-fluid"
+                    alt="Client Image"> </div>
+            <div class="col-6 col-md-3 col-lg-2"> <img
+                    src="<?php echo get_bloginfo('template_directory')?>/images/client-12.png" class="img-fluid"
+                    alt="Client Image"> </div>
 
         </div>
     </div>
@@ -286,46 +286,5 @@ if ( $result-> have_posts() ) : ?>
         </div>
     </div>
 </section>
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 align-logo"> <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img
-                        src="./images/Logo.png" class="img-fluid" alt="Logo"></a>
-                <div class="ic-seperator"></div>
-                <div class="address-icon"><img src="./images/icons/new-york-icon.png"></div>
-                <h5 class="address-heading">New York</h5>
-                <h6 class="address">1280 Lexington Ave STE 2
-                    New York, NY 10028</h6>
-                <p class="d-inline-block">@2020</p>
-            </div>
-            <div class="col-md-4 ic-col-pad ic-center-pad">
-                <h4>About</h4>
-                <div class="ic-seperator"></div>
-                <h6 class="ic-color-black">We focus on results. <span class="ic-color-blue">We focus on
-                        ROI.</span> Our experienced marketing specialists help brands understand where and how
-                    their money is best spent,
-                    whether that’s with social advertising or highly targeted search engine marketing.</h6>
-            </div>
-            <div class="col-md-4 ic-col-pad">
-                <h4>Let's Connect</h4>
-                <div class="ic-seperator"></div>
-
-
-                <a href="https://www.linkedin.com/company/chlorophyll-marketing" target="_blank"><img
-                        src="./images/LinkedIn_Logo.png"></a>
-            </div>
-            <div class="ic-seperator"></div>
-
-
-            <a href="https://www.designrush.com/agency/profile/idea-catalyst" target="_blank">See Idea Catalyst
-                profile on DesignRush</a>
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-    </div>
-</footer>
-</div>
-</main>
 
 <?php get_footer(); ?>

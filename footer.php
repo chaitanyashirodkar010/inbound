@@ -1,3 +1,39 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 align-logo"> <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img
+                        src="<?php echo get_bloginfo('template_directory')?>/images/Logo.png" class="img-fluid" alt="Logo"></a>
+                <div class="ic-seperator"></div>
+                <div class="address-icon"><img src="<?php echo get_bloginfo('template_directory')?>/images/icons/new-york-icon.png"></div>
+                <h5 class="address-heading">New York</h5>
+                <h6 class="address">1280 Lexington Ave STE 2
+                    New York, NY 10028</h6>
+                <p class="d-inline-block">@2020</p>
+            </div>
+            <div class="col-md-4 ic-col-pad ic-center-pad">
+                <h4>About</h4>
+                <div class="ic-seperator"></div>
+                <h6 class="ic-color-black">We focus on results. <span class="ic-color-blue">We focus on
+                        ROI.</span> Our experienced marketing specialists help brands understand where and how
+                    their money is best spent,
+                    whether that’s with social advertising or highly targeted search engine marketing.</h6>
+            </div>
+            <div class="col-md-4 ic-col-pad">
+                <h4>Let's Connect</h4>
+                <div class="ic-seperator"></div>
+
+
+                <a href="https://www.linkedin.com/company/chlorophyll-marketing" target="_blank"><img
+                        src="<?php echo get_bloginfo('template_directory')?>/images/LinkedIn_Logo.png"></a>
+            </div>
+            <div class="ic-seperator"></div>
+
+
+            <a href="https://www.designrush.com/agency/profile/idea-catalyst" target="_blank">See Idea Catalyst
+                profile on DesignRush</a>
+        </div>
+    </div>
+</footer>
 <!-- echo get_bloginfo('template_directory'); -->
 
 <!-- Body Wrapper Ends -->
@@ -60,7 +96,7 @@ jQuery(document).ready(function($) {
 var menuitems = document.querySelectorAll('.menu-item')
 
 menuitems.forEach(menuitem => {
-	
+
     menuitem.addEventListener('click', () => {
         if (menuitem.getElementsByClassName('sub-menu')[0]) {
             menuitem.getElementsByClassName('sub-menu')[0].style.display = "block"
