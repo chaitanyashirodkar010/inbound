@@ -1,8 +1,4 @@
-<?php
-/*
- * Template Name: homepage
- * Description: Page template with sidebar included.
- */ get_header(''); ?>
+<?php get_header(''); ?>
 
 <!-- Banner Section -->
 <!-- Banner Section -->

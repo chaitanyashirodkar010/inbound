@@ -1,7 +1,8 @@
-<?php get_header(); ?>
-<!-- Banner Section -->
-
-
+<?php
+/*
+ * Template Name: About us page template
+ * Description: Page template with sidebar included.
+ */ get_header(''); ?>
 
 
 
