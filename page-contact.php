@@ -21,38 +21,7 @@
       </div>
       <div class="col-md-8">
         <div class="ms-spacer-30"></div>
-        <form method="POST" class="ic-form-design mt-4 mt-md-auto">
-          <div class="form-row">
-            <div class="form-group col-12 col-md-6 pr-md-5">
-              <input type="text" class="form-control form-control-lg rounded-0" id="name" >
-              <label>Name*</label>
-            </div>
-            <div class="form-group  col-12 col-md-6 pl-md-5">
-              <input type="email" class="form-control form-control-lg rounded-0" id="email" >
-              <label>Email address*</label>
-            </div>
-            <div class="form-group  col-12 col-md-6 pr-md-5">
-              <input type="text" class="form-control form-control-lg rounded-0" id="organization" >
-              <label>Organization*</label>
-            </div>
-            <div class="form-group  col-12 col-md-6 pl-md-5">
-              <input type="text" class="form-control form-control-lg rounded-0" id="role" >
-              <label>Role*</label>
-            </div>
-            <div class="form-group  col-12 col-md-6 pr-md-5">
-              <input type="text" class="form-control form-control-lg rounded-0" id="country" >
-              <label>Country*</label>
-            </div>
-            <div class="form-group col-12 mt-5">
-              <label>Message*</label>
-              <textarea class="form-control form-control-lg rounded-0" id="review" rows="7"></textarea>
-            </div>
-          </div>
-          <div class="mt-4">
-            <button type="submit" class="btn ic-primary-btn float-md-right">Get in touch</button>
-          </div>
-        </form>
-        <?php echo do_shortcode('[wpforms id="63" title="false"]');?>
+        <?php echo do_shortcode('[wpforms id="63" class="ic-form-design mt-4 mt-md-auto" title="false"]');?>
       </div>
     </div>
   </div>
