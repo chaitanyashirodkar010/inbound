@@ -46,7 +46,25 @@
 <script src="<?php echo get_bloginfo('template_directory')?>/vendor/fontawesome/js/all.min.js"></script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script>
+let links = document.querySelectorAll(".menu-item")
+document.querySelector(".sub-menu").style.display = "none"
 
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        var yourUl = link.querySelector(".sub-menu");
+        yourUl.style.display = yourUl.style.display === 'none' ? '' : 'none';
+    })
+});
+const specifiedElement = document.querySelector(".menu-item")
+
+document.addEventListener('click', event => {
+    const isClickInside = specifiedElement.contains(event.target)
+    if (!isClickInside) {
+        document.querySelector(".sub-menu").style.display = "none"
+    }
+})
+</script>
 <script>
 jQuery(document).ready(function($) {
     var owl = $("#owl-demo-2 ,#owl-demo-3");
@@ -93,41 +111,8 @@ jQuery(document).ready(function($) {
 });
 
 
-
-var menuitems = document.querySelectorAll('.menu-item')
-
-menuitems.forEach(menuitem => {
-
-    menuitem.addEventListener('click', () => {
-        if (menuitem.getElementsByClassName('sub-menu')[0]) {
-            menuitem.getElementsByClassName('sub-menu')[0].style.display = "block"
-        } else {
-            menuitem.getElementsByClassName('sub-menu')[0].style.display = "none"
-        }
-    })
-});
 </script>
-<script>
-let links = document.querySelectorAll(".menu-item")
-document.querySelector(".sub-menu").style.display = "none"
 
-links.forEach(link => {
-    link.addEventListener('click', function() {
-        var yourUl = link.querySelector(".sub-menu");
-        yourUl.style.display = yourUl.style.display === 'none' ? '' : 'none';
-    })
-});
-const specifiedElement = document.querySelector(".menu-item")
-
-document.addEventListener('click', event => {
-    console.log(specifiedElement.contains(event.target));
-
-    const isClickInside = specifiedElement.contains(event.target)
-    if (!isClickInside) {
-        document.querySelector(".sub-menu").style.display = "none"
-    }
-})
-</script>
 </body>
 
 </html>
