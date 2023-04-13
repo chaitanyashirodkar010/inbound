@@ -1214,6 +1214,16 @@ button:focus {
   line-height: 1.6;
 }
 
+.phone-icon::before {
+  content: url(../images/telephone-forward-fill.svg);
+  width: 20px;
+  height: 20px;
+  color: #1470cf;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+
 .sub-menu {
   position: absolute;
   top: 100%;
