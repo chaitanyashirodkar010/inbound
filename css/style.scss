@@ -1265,7 +1265,7 @@ button:focus {
     line-height: 1.6;
 }
 
-.dropdown-menu {
+.sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -1286,7 +1286,7 @@ button:focus {
     box-shadow: 0px 1px 8px rgb(204 204 204 / 49%);
 }
 
-.dropdown-item {
+.menu-item {
     display: block;
     width: 100%;
     padding: 0.5rem 0rem 10px;
@@ -1309,8 +1309,8 @@ button:focus {
 
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover {
+.menu-item:focus,
+.menu-item:hover {
     color: #16181b;
     text-decoration: none;
 
